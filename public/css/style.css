@@ -1,0 +1,27 @@
+/* Tambahkan ini di styles.css */
+.hero-wrap {
+    position: relative;
+    height: 50vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Sesuaikan kekaburan sesuai kebutuhan */
+}
+/* Tambahkan ini di styles.css */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
