@@ -21,7 +21,7 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             padding: 20px;
-            width: 30s0%; /* Adjust the width if needed */
+            width: 30%; /* Adjust the width if needed */
         }
 
         h2 {
@@ -49,6 +49,16 @@
         .text-danger {
             color: #dc3545;
         }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +71,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @enderror
+
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
@@ -79,7 +90,11 @@
             <div class="mb-3">
                 <button type="submit" class="btn btn-primary w-100">Login</button>
             </div>
-            <a href="/" class="btn"><i class="bi bi-back"></i> Kembali</a>
+            <div style="text-align: right;">
+                <a href="{{ route('pelanggan.create') }}">Belum Punya Akun</a>
+            </div>
+            <a href="/" class="mb-3"><i class="bi bi-back"></i> Kembali</a>
+            
         </form>
     </div>
 

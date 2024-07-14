@@ -16,7 +16,7 @@
             <div class="col-md-8 text-center text-md-left pb-5">
                 <h1 class="mb-4 text-light">Layanan <span style="color: #ff5722;"><strong>LAUNDRY</strong>-Tech</span><br><strong>Dari Kami Untuk<span style="color: #3822ff;"> Anda,</span> Mencuci lebih Cerdas</strong></h1>
                 <h5 class="caps text-light">Aplikasi berbasis website untuk layanan realtime timbangan</h5>
-                <a href="/login" class="btn btn-primary">Daftarkan Dirimu!</a>
+                <a href="{{ route('pelanggan.create') }}" class="btn btn-primary">Daftarkan Dirimu!</a>
             </div>
         </div>
     </div>

@@ -5,7 +5,6 @@
 @section('content')
     <div class="container">
         <h1>Data Pelanggan</h1>
-        <a href="{{ route('pelanggan.create') }}" class="btn btn-primary mb-3 btn-sm">Tambah Pelanggan Baru</a>
         <table class="table">
             <thead>
                 <tr>
